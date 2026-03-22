@@ -41,8 +41,8 @@ function openUI() {
 }
 function closeUI() {
     document.getElementById('mechanic-container').classList.add('hidden');
-    if (isRightMouseDown) {
-        isRightMouseDown = false;
+    if (isMouseDown) {
+        isMouseDown = false;
         if (cameraTimeout) clearTimeout(cameraTimeout);
     }
 }
